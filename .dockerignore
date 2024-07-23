@@ -1,0 +1,22 @@
+#lista di file da escludere da docker context
+
+#git
+#git è una repository nascosta di git
+.Git 
+.gitignore
+
+
+#docker
+#docker è una repository nascosta di git
+.docker
+
+#python
+#quando python viene eseguito crea delle cache gli asterischi servono per essere sicuri di scartare tutte le sotto directory 
+app/__pycache__/
+app/*/__pycache__/
+app/*/*/__pycache__/
+app/*/*/*/__pycache__/
+#rimuove l'ambiente virtuale creato in locale 
+.env/
+.venv/
+venv/
